@@ -13,3 +13,10 @@ function produceDrivingRange(blockRange){
    }
   }
 }
+
+function produceTipCalculator(percentage){
+  return function(fare){
+    let tip = this.fare * this.percentage
+    return tip
+  }
+}
